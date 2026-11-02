@@ -12,28 +12,37 @@
 </head>
 
 <body>
-    <div class="navbar text-center">
-        <h1 class="text-uppercase">Script javascript</h1>
+    <div class="flex-column pt-3 navbar text-center bg-warning justify-content-center align-items-center">
+        <h1 class="text-uppercase fw-bold">Script javascript</h1>
         <p>Una collezione di scrpt Javascript</p>
     </div>
 
     <div class="row p-5">
         <div
-            class="col-12 col-md-3 justify-content-center align-items-center text-center flex-column pt-3 border border-dark-subtle">
-            <h1 class="text-primary fw-bold text-uppercase">Cosa fa lo script</h1>
+            class="col-12 col-md-3 flex-column pt-3 justify-content-center align-items-center text-center border border-dark-subtle">
+            <h1 class="text-primary text-uppercase">Cosa fa lo script</h1>
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/JavaScript_shield_logo_(no_text).svg/500px-JavaScript_shield_logo_(no_text).svg.png"
+                alt="js"
+                class="w-75">
+            <p class="p-1 bg-primary text-light rounded rounded-2 overflow-hidden">Inserisci il numero e lo script calcolera' i divisori</p>
         </div>
         <div
-            class="col-6 col-md-5 justify-content-center align-items-center text-center flex-column pt-3 border border-warning">
-            <h1 class="text-primary fw-bold text-uppercase">Il tuo input</h1>
-            <div class="input-group mb-3">
+            class="col-6 col-md-5 flex-column pt-3 justify-content-center align-items-center text-center border border-warning">
+            <h1 class="text-primary text-uppercase">Il tuo input</h1>
+            <div class="mb-3 input-group mt-3">
                 <input id="inputNumero" type="text" class="form-control" placeholder="Inserisci numero">
                 <button id="calcola" class="btn btn-outline-secondary" type="button">Calcola</button>
             </div>
         </div>
         <div
-            class="col-6 col-md-4 justify-content-center align-items-center text-center flex-column pt-3 border border-dark-subtle">
-            <h1 class="text-primary fw-bold text-uppercase">Il risultato</h1>
-            <p id="output"></p>
+            class="col-6 col-md-4 flex-column pt-3 justify-content-center align-items-center text-center border border-dark-subtle">
+            <h1 class="text-primary text-uppercase">Il risultato</h1>
+            <div id="outputBox" class="d-none rounded rounded-2">
+                <p id="output"></p>
+                <p id="outputArray"></p>
+            </div>
+            <div id="spinner" class="spinner-border text-danger mt-3"></div>
         </div>
     </div>
 
