@@ -39,6 +39,8 @@ calcolaBtn.addEventListener('click', () => {
     outputArray.textContent = "";
     outputBox.classList.remove("bg-danger");
     outputBox.classList.remove("text-light");
+    outputBox.classList.remove("d-none");
+    document.getElementById("spinner").classList.add("d-none");
 
     if (
         input === null ||
@@ -62,7 +64,4 @@ calcolaBtn.addEventListener('click', () => {
         }
         outputArray.textContent = "[" + divisori.join(", ") + "]";
     }
-
-    outputBox.classList.remove("d-none");
-    document.getElementById("spinner").classList.add("d-none");
 });
